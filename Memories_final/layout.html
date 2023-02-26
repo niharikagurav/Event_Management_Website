@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Management Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- EMAIL -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <header>
+        <a herf="#" class="logo"> MEMORIES</a>
+    
+       <!-- <div class="bx bx-menu" id="menu-icon"></div>-->
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!--<li><a href="#events">Events</a></li>-->
+            <div class="dropdown">
+                <li><button class="dropbtn">Events 
+                  <i class="fa fa-caret-down"></i>
+                </button></li>
+                <div class="dropdown-content">
+                 <a href="C:\Niharika\gdsc_webdevelopment\Memories_final\Weddings.html">Weddings</a>
+                 <a href="C:\Niharika\gdsc_webdevelopment\Memories_final\Birthdays.html">Birthdays</a>
+                 <a href="C:\Niharika\gdsc_webdevelopment\Memories_final\Engagment.html">Engagment</a>
+            </div>
+            
+
+        </ul>
+    </header>
+<!--HOME-->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="C:\Niharika\gdsc_webdevelopment\Memories_final\image\body.png">
+        </div>
+        <div class="home-text">
+            <p>We will bring to your attention some of the most unique ideas and based on your preferences...</p>
+            <p>We are focused on creating a sensational setting for your dream event in Pune ...</p>
+            <p> At your service: our job is to relieve you from anxiety, stress and confusion that planning can create.... </p>
+        </div>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="heading">
+        <h2>About Us</h2>
+        <h3>We work with you to understand exactly how your event should look and feel and what your priorities are. Then we refine, plan, and execute. We have the experience to know what works and what doesn’t.</h3>
+    </div>
+
+    <div class="information">
+        <!-- Box 1 -->
+        <div class="info-box">
+            <i class='bx bxs-user' ></i>
+            <span>Pallavi Gurav</span>
+            <span></span>
+            <i class='bx bxs-phone' ></i>
+            <span>+91 7447312640</span>
+            <span></span>
+            <i class='bx bxs-envelope' ></i>
+            <span>niharika.gurav@cumminscollege.in</span>
+        </div>
+        <div class="info-box">
+            <i class='bx bxs-user' ></i>
+            <span>Vaishali Kulkarni</span>
+            <span></span>
+            <i class='bx bxs-phone' ></i>
+            <span>+91 7447312640</span>
+            <span></span>
+            <i class='bx bxs-envelope' ></i>
+            <span>niharika.gurav@cumminscollege.in</span>
+        </div>
+        <div class="info-box">
+            <i class='bx bxs-user' ></i>
+            <span>Sarika Hadkar</span>
+            <span></span>
+            <i class='bx bxs-phone' ></i>
+            <span>+91 7447312640</span>
+            <span></span>
+            <i class='bx bxs-envelope' ></i>
+            <span>niharika.gurav@cumminscollege.in</span>
+        </div>
+        <div class="info-box">
+            <i class='bx bxs-user' ></i>
+            <span>Dipti Mandlik</span>
+            <span></span>
+            <i class='bx bxs-phone' ></i>
+            <span>+91 7447312640</span>
+            <span></span>
+            <i class='bx bxs-envelope' ></i>
+            <span>niharika.gurav@cumminscollege.in</span>
+    </div>
+</section>
+
+<!--GALLERY-->
+<section class="gallery" id="gallery">
+    <!-- Slideshow container -->
+<div>
+    <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: rgb(147, 101, 141);
+      }
+    </style>
+  
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="C:\Niharika\gdsc_webdevelopment\Memories_final\image\wed5.PNG" class="slide" width="500" height="300" />
+        <img src="C:\Niharika\gdsc_webdevelopment\Memories_final\image\img1.PNG" class="slide" width="500" height="300" />
+        <img src="C:\Niharika\gdsc_webdevelopment\Memories_final\image\wed3.PNG" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+</div>
+</section>
+
+
+<!--CONTACT-->
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Us</span>
+    </div>
+    <div class="contact-form">
+        <form action="" onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email"  id="email" placeholder="Your Email">
+            <textarea  id="message" cols="30" rows="10" placeholder="Message.."></textarea>
+            <input type="submit" id="submit" class="contact-button">
+            <button type="button" class="contact-button2" >SET UP A MEET</button>
+            <span></span>
+            <a href="./image/meet.pdf" class="btn" download>Download</a>
+                <p>Fill out this form and email us before our meet</p>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+    <h2>Make your memories with MEMORIES </h2>
+    <div class="footer-social">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+    </div>
+
+</div>
+
+<!-- Copyright -->
+<div class="copyright">
+    <p>Create By <a href="">Niharika Gurav</a> @2023 | All Right Reserved.</p>
+</div>
+
+
+    <!-- Link To JS -->
+    <script src="./javascript.js"></script>
+</body>
+</html>
